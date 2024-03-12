@@ -4,12 +4,12 @@ class Person {
 	this.name=name;
 	this.age=age;
 }
-	get name(){
-		return this.name;
-	}
-	set age(age){
-		return this.age
-	}
+	// get name(){
+	// 	return this.name;
+	// }
+	// set age(age){
+	// 	return this.age
+	// }
 }
 class Student extends Person {
 	study(){
