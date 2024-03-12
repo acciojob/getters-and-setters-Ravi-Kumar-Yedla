@@ -1,22 +1,28 @@
 class Person {
   constructor(name, age) {
-    this.name = name; // Use public field syntax
-    this.age = age; // Use public field syntax
+    this._name = name;
+    this._age = age;
   }
 
-  // No need for getter and setter
+  get name() {
+    return this._name;
+  }
+
+  set age(age) {
+    this._age = age;
+  }
 
 }
 
 class Student extends Person {
   study() {
-    console.log(`${this.name} is studying`);
+    console.log(`${this._name} is studying`);
   }
 }
 
 class Teacher extends Person {
   teach() {
-    console.log(`${this.name} is teaching`);
+    console.log(`${this._name} is teaching`);
   }
 }
 // Do not change the code below this line
